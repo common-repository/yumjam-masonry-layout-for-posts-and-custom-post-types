@@ -1,0 +1,141 @@
+#yj-posts-@masonry_id .gridcontainer .headerblock {
+    background: @header_background_color; 
+    padding: @header_padding;
+    display: @header_show; 
+}
+
+#yj-posts-@masonry_id .gridcontainer .headerblock a {
+    text-decoration: none;
+    border:0;
+}
+#yj-posts-@masonry_id .griditem a { box-shadow:none; }
+#yj-posts-@masonry_id .griditem {
+    border-top-width: @block_spacing_tr !important;
+    border-right-width: @block_spacing_tr !important;
+    border-bottom-width: @block_spacing_bl !important;
+    border-left-width: @block_spacing_bl !important;
+    border-color: @page_background_color;
+    border-style: solid;
+}
+#yj-posts-@masonry_id .griditem .gridcontainer {
+    /*opacity: 0.8;*/
+}
+#yj-posts-@masonry_id .griditem .gridcontainer:hover {
+    /*opacity: 1 !important;*/
+}
+
+#yj-posts-@masonry_id .griditem .gridcontainer .inner {
+    position: relative;
+    min-height:  @content_minimum_height;
+    background-color:  @background_color;
+}
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer .inner {
+    background-color:  @alternate_background_color;
+}
+#yj-posts-@masonry_id .gridcontainer a { display: block; width:100%; height:100%; }
+#yj-posts-@masonry_id .gridcontainer a.post-edit-link {
+    position: absolute;
+    height: auto;
+    width: auto;
+    bottom: 60px;
+    color:#fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    left:15px;
+}
+#yj-posts-@masonry_id .gridcontainer .readmore {
+    display: inline-block;
+    padding: @content_show_readmore_padding;
+    background:  @content_show_readmore_background; 
+    font-size: @content_show_readmore_font_size;
+    line-height: @content_show_readmore_font_size;
+    color: @content_show_readmore_font_color; 
+    position: absolute;
+    bottom: 0;
+    @content_show_readmore_alignment: 0;
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: @content_show_readmore_bold;    
+}
+
+#yj-posts-@masonry_id .gridcontainer .readmore i {
+    margin-right: @content_show_readmore_padding;
+    font-size: @content_show_readmore_font_size;
+    line-height: @content_show_readmore_font_size;
+}
+
+#yj-posts-@masonry_id .gridcontainer .readmore:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+#yj-posts-@masonry_id .gridcontainer .readmore:active {
+    text-decoration: none;
+    opacity: 1;
+}
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer .readmore {
+    background:  @content_show_readmore_background; 			
+    color: @content_show_readmore_font_color; 			
+}
+
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer .headerblock {
+    background:  @alternate_header_background_color; 			
+}
+
+#yj-posts-@masonry_id .gridcontainer h2 { 						
+    font-size: @header_font_size;
+    color: @header_font_color;  
+
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: @header_font_uppercase;  
+}
+
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer h2 {
+    font-size: @header_font_size;
+}
+
+#yj-posts-@masonry_id .gridcontainer h3 {
+    font-size: @header_author_font_size;
+    color: @header_author_font_color;           
+    margin-top:  @header_spacing;
+    margin-bottom: 0;
+}
+#yj-posts-@masonry_id .gridcontainer h4 { 			
+    font-size: @header_date_font_size;
+    color: @header_date_font_color;  			
+    margin-top:  @header_spacing;
+    margin-bottom: 0;
+}
+
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer h2, #yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer h3, #yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer h4  {			
+    color: @alternate_header_font_color;
+}
+
+#yj-posts-@masonry_id .gridcontainer p {			
+    font-size: @content_font_size;			
+    color: @content_font_color;  	
+    padding: @content_padding;		
+    margin: 0;	
+    //text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);		
+}
+#yj-posts-@masonry_id .griditem:nth-of-type(odd) .gridcontainer p {            
+    color: @alternate_header_font_color;            
+}
+#yj-posts-@masonry_id .gridcontainer p:last-child {								
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+#yj-posts-@masonry_id .gridcontainer a:hover {     
+    text-decoration: none;
+}
+
+#yj-posts-@masonry_id {
+    background: @gap_background_color;
+}
+#yj-more-posts-@masonry_id  a {
+    margin-top: @block_spacing_tr !important;
+    font-size: @button_font_size;
+    color: @button_font_color;
+    padding: @button_padding;
+    background: @button_background;
+}

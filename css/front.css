@@ -1,0 +1,125 @@
+/* 
+    Created on : 04-Apr-2016, 11:37:37
+    Author     : Matt
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+.dev-cols {
+    position: absolute;
+    padding: 2px 9px 2px 9px;
+    margin: 5px;
+    z-index: 999;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dev-cols.custom {
+    background-color: rgba(204,255,209,0.9);
+}
+
+.dev-cols.post {
+    background-color: rgba(204,233,255,0.9);
+}
+
+#yj-posts, .yj-posts {
+   position: relative;
+   clear: both;
+   display: block;
+}
+
+.griditem {
+   /*display: none;*/
+   opacity: 0;
+   /*border: 1px solid lightgray;*/
+   padding:0 0 !important;  
+  
+}
+.post.griditem {
+   
+}
+
+.griditem .gridcontainer {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.griditem .gridcontainer h2, .griditem .gridcontainer h3, .griditem .gridcontainer h4 {
+    font-weight: normal;
+}
+
+.griditem .gridcontainer h3, .griditem .gridcontainer h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.griditem.format-image {
+    padding:5px 5px;  
+}
+.gridcontainer.image {
+    background-size: cover; 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gridcontainer.link-image {
+    cursor: pointer;
+}
+
+.gridcontainer img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+.gridcontainer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gridcontainer .inner {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.gridcontainer .inner .inner-image {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height:100%;
+}
+.gridcontainer .inner p.substring { 
+text-overflow: clip;
+text-overflow: ellipsis;
+text-overflow: "…";
+ }
+
+.yj-more-posts, #yj-more-posts {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+
+.yj-more-posts a, #yj-more-posts a {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.readmorehidden {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .griditem  {
+        width: 100%;
+    }
+    .readmorehidden {
+    display: inline-block;
+}
+
+}
